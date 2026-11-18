@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<!--
+  Portfolio · Proyectos
+  Cada <li> de la lista es un proyecto. Duplica o elimina bloques según necesites.
+-->
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="meta.projects.title">Proyectos · Portfolio</title>
+  <meta name="description" content="Proyectos desarrollados: descripciones, tecnologías, repositorios y demostraciones." data-i18n-attr="content:meta.projects.desc">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js" defer></script>
+  <noscript><style>.lang { display: none; }</style></noscript>
+</head>
+<body id="top">
+  <a class="skip" href="#main" data-i18n="skip">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="wrap bar">
+      <a class="brand" href="index.html">~/portfolio</a>
+      <nav class="nav" aria-label="Navegación principal" data-i18n-attr="aria-label:nav.label">
+        <ul>
+          <li><a href="index.html" data-i18n="nav.home">Inicio</a></li>
+          <li><a href="projects.html" aria-current="page" data-i18n="nav.projects">Proyectos</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="lang" role="group" aria-label="Idioma" data-i18n-attr="aria-label:lang.label">
+        <button type="button" data-lang="es" aria-pressed="true" aria-label="Cambiar a español" data-i18n-attr="aria-label:lang.es">ES</button>
+        <button type="button" data-lang="en" aria-pressed="false" aria-label="Cambiar a inglés" data-i18n-attr="aria-label:lang.en">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="wrap">
+
+      <header class="page-head">
+        <p class="page-head__path">~/portfolio/projects.html</p>
+        <h1 data-i18n="proj.title">Proyectos</h1>
+        <p class="page-head__intro" data-i18n="proj.intro">Una selección de proyectos de backend, datos e infraestructura: desde una API de pedidos B2B desplegada con Docker hasta análisis de lenguaje natural y servidores que se configuran con un solo script.</p>
+      </header>
+
+      <ol class="project-list">
+
+        <!-- ===== PROYECTO 01 ===== -->
+        <li>
+          <article class="project" aria-labelledby="p1-title">
+            <figure class="project__media">
+              <div class="frame frame--landscape"><a class="zoom" href="assets/images/proyecto-nexsale.webp"><img src="assets/images/proyecto-nexsale.webp" width="1060" height="662" alt="Documentación Swagger de la API de NexSale-B2B: endpoints de pedidos y productos protegidos con autenticación" data-i18n-attr="alt:proj.1.alt"></a></div>
+              <figcaption class="comment" data-i18n="proj.shot">pulsa para ampliar</figcaption>
+            </figure>
+            <div class="project__body">
+              <span class="project__num">01</span>
+              <h2 class="project__title" id="p1-title">NexSale-B2B</h2>
+              <p class="project__desc" data-i18n="proj.1.desc">Backend transaccional para la gestión de pedidos y ventas entre empresas. API REST con autenticación JWT y control de acceso por roles (administración, comerciales y almacén), generación de facturas en PDF y RTF, y despliegue completo con Docker Compose: base de datos MySQL y Apache como proxy inverso delante de FastAPI. Proyecto en desarrollo.</p>
+              <dl class="ledger">
+                <div>
+                  <dt data-i18n="proj.stack">Tecnologías</dt>
+                  <dd>Python, FastAPI, SQLAlchemy, Pydantic, MySQL, JWT, Docker Compose, Apache</dd>
+                </div>
+              </dl>
+              <p class="project__links">
+                <span><a class="arrow-link" href="https://github.com/enekorodriguezg/NexSale-B2B/blob/main/README.es.md" data-i18n-attr="href:proj.1.repo.href" target="_blank" rel="noopener"><span data-i18n="proj.repo">Repositorio</span> <span aria-hidden="true">↗</span></a></span>
+              </p>
+            </div>
+          </article>
+        </li>
+
+        <!-- ===== PROYECTO 02 ===== -->
+        <li>
+          <article class="project" aria-labelledby="p2-title">
+            <figure class="project__media">
+              <div class="frame frame--landscape"><a class="zoom" href="assets/images/proyecto-nlp.webp"><img src="assets/images/proyecto-nlp.webp" width="1060" height="662" alt="Dashboard de Tableau con la evolución mensual de reseñas positivas y negativas entre 2010 y 2025, con filtros por género y aplicación" data-i18n-attr="alt:proj.2.alt"></a></div>
+              <figcaption class="comment" data-i18n="proj.shot">pulsa para ampliar</figcaption>
+            </figure>
+            <div class="project__body">
+              <span class="project__num">02</span>
+              <h2 class="project__title" id="p2-title" data-i18n="proj.2.title">Analítica NLP: WhatsApp frente a Telegram</h2>
+              <p class="project__desc" data-i18n="proj.2.desc">Pipeline de procesamiento de lenguaje natural y Machine Learning que analiza reseñas de usuarios para entender por qué se quedan o se van de cada aplicación. Incluye limpieza y lematización del texto, modelado de temas con LDA, comparativa entre clasificadores clásicos y un LLM (Gemma 2) con few-shot prompting, y dashboards en Tableau. Proyecto en equipo de cuatro personas.</p>
+              <dl class="ledger">
+                <div>
+                  <dt data-i18n="proj.stack">Tecnologías</dt>
+                  <dd>Python, Scikit-learn, Pandas, NLTK, TF-IDF, LDA, SMOTE, LangChain, Ollama, Tableau</dd>
+                </div>
+              </dl>
+              <p class="project__links">
+                <span><a class="arrow-link" href="https://github.com/enekorodriguezg/nlp-whatsapp-telegram-analytics" target="_blank" rel="noopener"><span data-i18n="proj.repo">Repositorio</span> <span aria-hidden="true">↗</span></a></span>
+              </p>
+            </div>
+          </article>
+        </li>
+
+        <!-- ===== PROYECTO 03 ===== -->
+        <li>
+          <article class="project" aria-labelledby="p3-title">
+            <figure class="project__media">
+              <div class="frame frame--landscape"><a class="zoom" href="assets/images/proyecto-pokedex.webp"><img src="assets/images/proyecto-pokedex.webp" width="1060" height="662" alt="Ficha de Pikachu en la Pokédex: descripción, tipos, habilidades y estadísticas base" data-i18n-attr="alt:proj.3.alt"></a></div>
+              <figcaption class="comment" data-i18n="proj.shot">pulsa para ampliar</figcaption>
+            </figure>
+            <div class="project__body">
+              <span class="project__num">03</span>
+              <h2 class="project__title" id="p3-title" data-i18n="proj.3.title">Aplicación web full stack: Pokédex API</h2>
+              <p class="project__desc" data-i18n="proj.3.desc">Plataforma en Flask que consume APIs REST externas y las presenta en una interfaz dinámica con Jinja2. La arquitectura se organiza en Blueprints para que sea escalable y mantenga separadas las rutas y la lógica de negocio.</p>
+              <dl class="ledger">
+                <div>
+                  <dt data-i18n="proj.stack">Tecnologías</dt>
+                  <dd data-i18n="proj.3.stack">Python, Flask, Jinja2, Blueprints, APIs REST</dd>
+                </div>
+                <div>
+                  <dt data-i18n="proj.access">Acceso a la demo</dt>
+                  <dd><span data-i18n="proj.user">usuario</span> <code>admin</code> · <span data-i18n="proj.pass">contraseña</span> <code>admin</code><span class="comment" style="display:block;margin:.4rem 0 0" data-i18n="proj.3.access.hint">rol de administrador: puedes aprobar cuentas nuevas. Los datos se restauran en cada reinicio.</span></dd>
+                </div>
+              </dl>
+              <p class="project__links">
+                <span><a class="arrow-link" href="https://github.com/enekorodriguezg/pokedex-flask-manager" target="_blank" rel="noopener"><span data-i18n="proj.repo">Repositorio</span> <span aria-hidden="true">↗</span></a></span>
+                <span><a class="arrow-link" href="https://pokedex-flask-manager.onrender.com" target="_blank" rel="noopener"><span data-i18n="proj.demo">Demostración</span> <span aria-hidden="true">↗</span></a></span>
+              </p>
+            </div>
+          </article>
+        </li>
+
+        <!-- ===== PROYECTO 04 ===== -->
+        <li>
+          <article class="project" aria-labelledby="p4-title">
+            <figure class="project__media">
+              <div class="frame frame--landscape"><a class="zoom" href="assets/images/proyecto-iac.webp"><img src="assets/images/proyecto-iac.webp" width="1060" height="662" alt="Terminal ejecutando el script de aprovisionamiento: datos del proyecto y menú de pasos, desde clonar el repositorio hasta instalar MySQL y arrancar el servicio" data-i18n-attr="alt:proj.4.alt"></a></div>
+              <figcaption class="comment" data-i18n="proj.shot">pulsa para ampliar</figcaption>
+            </figure>
+            <div class="project__body">
+              <span class="project__num">04</span>
+              <h2 class="project__title" id="p4-title" data-i18n="proj.4.title">Automatización de sistemas y servidores (IaC)</h2>
+              <p class="project__desc" data-i18n="proj.4.desc">Herramientas de Infrastructure as Code en Bash que automatizan el despliegue de servidores web y la configuración de Nginx. Incluyen la gestión automatizada de bases de datos y la orquestación de los servicios del sistema con Systemd.</p>
+              <dl class="ledger">
+                <div>
+                  <dt data-i18n="proj.stack">Tecnologías</dt>
+                  <dd>Bash, Linux, Nginx, Systemd</dd>
+                </div>
+              </dl>
+              <p class="project__links">
+                <span><a class="arrow-link" href="https://github.com/enekorodriguezg/Linux-Server-Automation" target="_blank" rel="noopener"><span data-i18n="proj.repo">Repositorio</span> <span aria-hidden="true">↗</span></a></span>
+              </p>
+            </div>
+          </article>
+        </li>
+
+      </ol>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <a href="#top"><span aria-hidden="true">↑</span> <span data-i18n="foot.top">Volver arriba</span></a>
+    </div>
+  </footer>
+
+  <!-- Visor de capturas: al pulsar una imagen se amplía aquí (js/script.js).
+       Sin JavaScript, cada enlace abre la imagen directamente. -->
+  <dialog class="lightbox" id="lightbox" aria-label="Captura ampliada" data-i18n-attr="aria-label:lightbox.label">
+    <form method="dialog">
+      <button class="lightbox__close" type="submit" aria-label="Cerrar" data-i18n-attr="aria-label:lightbox.close">×</button>
+    </form>
+    <img src="data:," alt="">
+  </dialog>
+</body>
+</html>

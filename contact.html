@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!--
+  Portfolio · Contacto
+-->
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="meta.contact.title">Contacto · Portfolio</title>
+  <meta name="description" content="Formas de ponerse en contacto: correo electrónico, redes sociales y otros medios." data-i18n-attr="content:meta.contact.desc">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js" defer></script>
+  <noscript><style>.lang { display: none; }</style></noscript>
+</head>
+<body id="top">
+  <a class="skip" href="#main" data-i18n="skip">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="wrap bar">
+      <a class="brand" href="index.html">~/portfolio</a>
+      <nav class="nav" aria-label="Navegación principal" data-i18n-attr="aria-label:nav.label">
+        <ul>
+          <li><a href="index.html" data-i18n="nav.home">Inicio</a></li>
+          <li><a href="projects.html" data-i18n="nav.projects">Proyectos</a></li>
+          <li><a href="contact.html" aria-current="page" data-i18n="nav.contact">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="lang" role="group" aria-label="Idioma" data-i18n-attr="aria-label:lang.label">
+        <button type="button" data-lang="es" aria-pressed="true" aria-label="Cambiar a español" data-i18n-attr="aria-label:lang.es">ES</button>
+        <button type="button" data-lang="en" aria-pressed="false" aria-label="Cambiar a inglés" data-i18n-attr="aria-label:lang.en">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="wrap">
+
+      <header class="page-head">
+        <p class="page-head__path">~/portfolio/contact.html</p>
+        <h1 data-i18n="contact.title">Contacto</h1>
+        <p class="page-head__intro" data-i18n="contact.lead">Si quieres hablar de un proyecto, una oferta o simplemente saludar, este es el mejor sitio para encontrarme.</p>
+      </header>
+
+      <!-- ===== CORREO (destacado) ===== -->
+      <section class="section" aria-labelledby="mail-title">
+        <div class="section__head">
+          <span class="idx">01</span>
+          <h2 id="mail-title" data-i18n="contact.email">Correo electrónico</h2>
+          <p class="comment" data-i18n="contact.email.hint">dirección de correo</p>
+        </div>
+        <div class="section__body">
+          <a class="mail" href="mailto:enekorodriguezgarcia@gmail.com">enekorodriguezgarcia@gmail.com</a>
+        </div>
+      </section>
+
+      <!-- ===== OTROS MEDIOS ===== -->
+      <section class="section" aria-labelledby="channels-title">
+        <div class="section__head">
+          <span class="idx">02</span>
+          <h2 id="channels-title" data-i18n="contact.other.title">Otros canales</h2>
+        </div>
+        <div class="section__body">
+          <dl class="ledger channels">
+            <div>
+              <dt>GitHub</dt>
+              <dd><a href="https://github.com/enekorodriguezg" target="_blank" rel="noopener">github.com/enekorodriguezg</a></dd>
+            </div>
+            <div>
+              <dt>LinkedIn</dt>
+              <dd><a href="https://www.linkedin.com/in/eneko-rodr%C3%ADguez-garc%C3%ADa-595226393" target="_blank" rel="noopener">linkedin.com/in/eneko-rodríguez-garcía</a></dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <!-- ===== EASTER EGG: terminal decorativa ===== -->
+      <section class="section" aria-label="Easter egg">
+        <div class="section__head">
+          <p class="comment" data-i18n="term.caption">Decoración: ninguna de estas órdenes se ejecuta.</p>
+        </div>
+        <div class="section__body">
+          <div class="terminal" aria-hidden="true">
+            <div class="terminal__bar"><span>portfolio — sh</span><span>/bin/sh</span></div>
+<pre class="terminal__body"><span class="t-cmd"><span data-i18n="term.mail">mail -s "Hola"</span> enekorodriguezgarcia@gmail.com</span>
+<span data-i18n="term.queued">Mensaje en cola. Esperando respuesta…</span>
+<span class="t-cmd"><span class="cursor"></span></span></pre>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <a href="#top"><span aria-hidden="true">↑</span> <span data-i18n="foot.top">Volver arriba</span></a>
+    </div>
+  </footer>
+</body>
+</html>

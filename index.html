@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<!--
+  Portfolio · Landing
+  Los textos en español viven aquí (idioma por defecto y fallback sin JavaScript).
+  Las traducciones al inglés están en js/script.js.
+-->
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="meta.index.title">Inicio · Portfolio</title>
+  <meta name="description" content="Portfolio personal de desarrollo de software: presentación, habilidades, experiencia y formación." data-i18n-attr="content:meta.index.desc">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js" defer></script>
+  <noscript><style>.lang { display: none; }</style></noscript>
+</head>
+<body id="top">
+  <a class="skip" href="#main" data-i18n="skip">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="wrap bar">
+      <a class="brand" href="index.html">~/portfolio</a>
+      <nav class="nav" aria-label="Navegación principal" data-i18n-attr="aria-label:nav.label">
+        <ul>
+          <li><a href="index.html" aria-current="page" data-i18n="nav.home">Inicio</a></li>
+          <li><a href="projects.html" data-i18n="nav.projects">Proyectos</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="lang" role="group" aria-label="Idioma" data-i18n-attr="aria-label:lang.label">
+        <button type="button" data-lang="es" aria-pressed="true" aria-label="Cambiar a español" data-i18n-attr="aria-label:lang.es">ES</button>
+        <button type="button" data-lang="en" aria-pressed="false" aria-label="Cambiar a inglés" data-i18n-attr="aria-label:lang.en">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="wrap">
+
+      <!-- ===== PRESENTACIÓN ===== -->
+      <section class="hero" aria-labelledby="hero-name">
+        <div class="hero__main">
+          <p class="comment" data-i18n="home.hello">hola, soy</p>
+          <h1 class="hero__name" id="hero-name" data-i18n="home.name">Eneko Rodríguez García</h1>
+
+          <p class="hero__role" data-i18n="home.role">Estudiante de Ingeniería Informática de Gestión y Sistemas de Información</p>
+
+          <p class="hero__intro" data-i18n="home.intro">Estudiante de Ingeniería Informática en la UPV/EHU centrado en el desarrollo backend, la automatización de sistemas y la ciberseguridad. Construyo pipelines de datos, aplicaciones web con Python e infraestructura que se despliega sola.</p>
+
+          <dl class="ledger">
+            <div>
+              <dt data-i18n="spec.location">Ubicación</dt>
+              <dd data-i18n="spec.location.value">Bilbao, España</dd>
+            </div>
+            <div>
+              <dt data-i18n="spec.status">Disponibilidad</dt>
+              <dd data-i18n="spec.status.value">Disponible para trabajar</dd>
+            </div>
+          </dl>
+
+          <div class="actions">
+            <a class="btn btn--solid" href="projects.html"><span data-i18n="home.cta.projects">Ver proyectos</span> <span aria-hidden="true">→</span></a>
+            <a class="btn" href="contact.html"><span data-i18n="home.cta.contact">Contactar</span> <span aria-hidden="true">→</span></a>
+            <a class="btn" href="assets/docs/cv-eneko-rodriguez.pdf" download="CV - Eneko Rodríguez.pdf" data-i18n-attr="href:home.cta.cv.href; download:home.cta.cv.file"><span data-i18n="home.cta.cv">Descargar CV (PDF)</span> <span aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+
+        <figure class="hero__aside">
+          <div class="frame frame--portrait"><img src="assets/images/foto.webp" width="413" height="516" alt="Fotografía de Eneko Rodríguez García" data-i18n-attr="alt:home.photo.alt"></div>
+        </figure>
+      </section>
+
+      <!-- ===== 01 SOBRE MÍ ===== -->
+      <section class="section" aria-labelledby="about-title">
+        <div class="section__head">
+          <span class="idx">01</span>
+          <h2 id="about-title" data-i18n="about.title">Sobre mí</h2>
+          <p class="comment" data-i18n="about.hint">trayectoria e intereses</p>
+        </div>
+        <div class="section__body prose">
+          <p data-i18n="about.p1">Me formé en el Bachillerato Tecnológico de Salesianos Deusto y desde 2023 estudio Ingeniería Informática de Gestión y Sistemas de Información en la Escuela de Ingeniería de Bilbao (UPV/EHU).</p>
+          <p data-i18n="about.p2">Me interesa todo lo que ocurre detrás de la interfaz: el backend con Python, la administración de sistemas Linux, la automatización con Bash y la seguridad y auditoría de aplicaciones. También trabajo con ciencia de datos y Machine Learning, cuidando que los modelos lleguen listos para producción.</p>
+          <p data-i18n="about.p3">Hablo español (nativo), inglés (C1, Cambridge) y euskera (C1).</p>
+        </div>
+      </section>
+
+      <!-- ===== 02 HABILIDADES ===== -->
+      <section class="section" aria-labelledby="skills-title">
+        <div class="section__head">
+          <span class="idx">02</span>
+          <h2 id="skills-title" data-i18n="skills.title">Habilidades</h2>
+          <p class="comment" data-i18n="skills.hint">agrupadas por área</p>
+        </div>
+        <div class="section__body">
+          <dl class="ledger">
+            <div>
+              <dt data-i18n="skills.lang">Lenguajes</dt>
+              <dd>Python, Rust, Bash, Java, SQL</dd>
+            </div>
+            <div>
+              <dt>Backend</dt>
+              <dd>FastAPI, Flask, SQLAlchemy, MySQL</dd>
+            </div>
+            <div>
+              <dt data-i18n="skills.data">Datos y ML</dt>
+              <dd>Scikit-learn, Pandas, NumPy, NLTK</dd>
+            </div>
+            <div>
+              <dt data-i18n="skills.infra">Infraestructura</dt>
+              <dd>Linux, Docker, Nginx, Git</dd>
+            </div>
+            <div>
+              <dt data-i18n="skills.sec">Seguridad</dt>
+              <dd>Burp Suite, Nmap, SQLmap</dd>
+            </div>
+            <div>
+              <dt data-i18n="skills.spoken">Idiomas</dt>
+              <dd data-i18n="skills.spoken.list">Español (nativo), inglés (C1), euskera (C1)</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <!-- ===== 03 EXPERIENCIA ===== -->
+      <section class="section" aria-labelledby="exp-title">
+        <div class="section__head">
+          <span class="idx">03</span>
+          <h2 id="exp-title" data-i18n="exp.title">Experiencia</h2>
+          <p class="comment" data-i18n="exp.hint">proyectos personales y académicos</p>
+        </div>
+        <div class="section__body">
+          <dl class="ledger">
+            <div>
+              <dt data-i18n="exp.1.period">Actualidad</dt>
+              <dd data-i18n="exp.1.desc">Gestor de contraseñas en Rust · proyecto personal en desarrollo</dd>
+            </div>
+            <div>
+              <dt data-i18n="exp.2.period">2023 – actualidad</dt>
+              <dd data-i18n="exp.2.desc">Proyectos académicos en la UPV/EHU: API de pedidos B2B con FastAPI, analítica NLP y Machine Learning, aplicación web con Flask y automatización de servidores con Bash</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <!-- ===== 04 FORMACIÓN ===== -->
+      <section class="section" aria-labelledby="edu-title">
+        <div class="section__head">
+          <span class="idx">04</span>
+          <h2 id="edu-title" data-i18n="edu.title">Formación</h2>
+          <p class="comment" data-i18n="edu.hint">titulación, centro y años</p>
+        </div>
+        <div class="section__body">
+          <dl class="ledger">
+            <div>
+              <dt data-i18n="edu.1.period">2023 – actualidad</dt>
+              <dd data-i18n="edu.1.desc">Grado en Ingeniería Informática de Gestión y Sistemas de Información · Escuela de Ingeniería de Bilbao (UPV/EHU)</dd>
+            </div>
+            <div>
+              <dt>2021 – 2023</dt>
+              <dd data-i18n="edu.2.desc">Bachillerato Tecnológico · Salesianos Deusto</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <!-- ===== EASTER EGG: terminal decorativa ===== -->
+      <section class="section" aria-label="Easter egg" >
+        <div class="section__head">
+          <p class="comment" data-i18n="term.caption">Decoración: ninguna de estas órdenes se ejecuta.</p>
+        </div>
+        <div class="section__body">
+          <div class="terminal" aria-hidden="true">
+            <div class="terminal__bar"><span>portfolio — sh</span><span>/bin/sh</span></div>
+<pre class="terminal__body"><span class="t-cmd">whoami</span>
+eneko-rodriguez-garcia
+<span class="t-cmd">echo $LANG</span>
+<span data-i18n="term.lang">es_ES.UTF-8</span>
+<span class="t-cmd" data-i18n="term.ls">ls ./proyectos</span>
+nexsale-b2b/  nlp-analytics/  pokedex-api/  iac-servers/
+<span class="t-cmd">cat /etc/motd</span>
+<span data-i18n="term.motd">Sin plantillas, sin frameworks: HTML, CSS y un poco de JS.</span>
+<span class="t-cmd"><span class="cursor"></span></span></pre>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <a href="#top"><span aria-hidden="true">↑</span> <span data-i18n="foot.top">Volver arriba</span></a>
+    </div>
+  </footer>
+</body>
+</html>
